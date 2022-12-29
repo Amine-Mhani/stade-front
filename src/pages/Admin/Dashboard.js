@@ -1,19 +1,32 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import Sidebar from '../../components/Sidebar'
+import PatientService from '../../services/PatientService'
 
 function Dashboard() {
+
+    const[patients, setPatients] = React.useState([])
+
+    const getPatients = async() => {
+        return PatientService.getAllPatients()
+    }
+
+    React.useEffect(()=>{
+
+        getPatients().then((res) => {
+            setPatients(res.data)
+            console.log(patients)
+
+          })
+
+
+    }, [])
+
   return (
-    <>
-    <Sidebar/>
-    <div className="main">
-        <Navbar/>
-        <main className="content">
-            <div className="container-fluid p-0">
-            </div>
-        </main>
-    </div>
-    </>
+
+        <div className="card flex-fill">
+
+        </div>
   )
 }
 
