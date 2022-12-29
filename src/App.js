@@ -1,11 +1,19 @@
 import './App.css';
+import { Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './pages/Admin/Dashboard';
+import Sidebar from './components/Sidebar';
+
 
 
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <Router>
+
+      <Routes>
+        <Route exact path="/" element={<Dashboard/>}/>
+      </Routes>
+    </Router>
   );
 }
 
