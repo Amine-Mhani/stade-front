@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../../components/Navbar'
-import Sidebar from '../../components/Sidebar'
-import PatientService from '../../services/PatientService'
+import Navbar from '../components/Navbar'
+import Sidebar from '../components/Sidebar'
+import PatientService from '../services/PatientService'
 
 function Dashboard() {
 

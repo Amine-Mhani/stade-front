@@ -1,7 +1,7 @@
 import React from 'react'
 import PatientService from '../../services/PatientService'
 import { useParams } from 'react-router-dom'
-import { render } from '@testing-library/react'
+
 
 function Detections() {
 
@@ -29,24 +29,24 @@ function Detections() {
 
   return (
     <>
-<h1 class="h3 mb-3"><strong>Detections</strong></h1>
-       <div class="row">
-                <div class="col-xl-12 col-xxl-5 d-flex">
-                    <div class="w-100">
-                        <div class="row">
+<h1 className="h3 mb-3"><strong>Detections</strong></h1>
+       <div className="row">
+                <div className="col-xl-12 col-xxl-5 d-flex">
+                    <div className="w-100">
+                        <div className="row">
                         {detections.map((detection) => (
-                            <div class="card">
+                            <div className="card">
                            
-                                <div class="card-body">
-                                    <div class="row">
+                                <div className="card-body">
+                                    <div className="row">
                                     
                                     
-                                    <div class="col mt-0">
-                                                <h5 class="card-title">{detection.code}</h5>
+                                    <div className="col mt-0">
+                                                <h5 className="card-title">{detection.code}</h5>
                                             </div>   
                                     </div>
                                     
-                                    <h1 class="mt-1 mb-3">{detection.stade.level}</h1>
+                                    <h1 className="mt-1 mb-3">{detection.stade.level}</h1>
                                     <p className='text-muted'> {detection.description}</p>
                                     
                                 </div>

@@ -1,8 +1,7 @@
 import React from 'react'
-import Navbar from '../../components/Navbar'
-import Sidebar from '../../components/Sidebar'
+
 import PatientService from '../../services/PatientService'
-import Profile from './Profile'
+
 
 function Patients() {
 
@@ -24,12 +23,22 @@ function Patients() {
 
   return (
     <>
-    <h1 class="h3 mb-3"><strong>Pages/</strong> Patients</h1>
+    
+    
+        <div className="row mb-4">
+            <div className="col-11">
+                <h1 className="h3 mb-3"><strong>Pages/</strong> Patients</h1>
+            </div>
+            <div className="col-1">
+                <a href='/patients/add' className="btn btn-primary float-end">Add</a>
+            </div>
+        </div>
 
         <div className="card flex-fill">
             <div className="card-header">
 
                 <h5 className="card-title mb-0">Patients Table</h5>
+
             </div>
             <table className="table table-hover my-0">
                 <thead>

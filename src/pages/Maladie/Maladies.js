@@ -19,7 +19,15 @@ function Maladies() {
 
   return (
     <>
-    <h1 class="h3 mb-3"><strong>Pages/</strong> Maladies</h1>
+    
+    <div className="row mb-4">
+        <div className="col-11">
+            <h1 class="h3 mb-3"><strong>Pages/</strong> Maladies</h1>
+        </div>
+        <div className="col-1">
+            <a href='/maladies/add' className="btn btn-primary float-end">Add</a>
+        </div>
+    </div>
 
     <div className="card flex-fill">
             <div className="card-header">
